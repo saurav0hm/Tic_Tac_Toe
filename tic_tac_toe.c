@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include<stdlib.h>
-struct deepak
+struct saurav
 {   int i;
     char ch;
 };
@@ -17,10 +17,10 @@ void display(char sym[9])
     printf("\n\t\t\t %c  | %c  | %c   ",sym[6],sym[7],sym[8]);
     printf("\n\t\t\t    |    |    ");
 }
-struct deepak inputvalue(char sym[9],int count)
+struct saurav inputvalue(char sym[9],int count)
 {   int i;
     char value;
-    struct deepak info;
+    struct saurav info;
     again:
     if(count%2==0)
     {
@@ -84,7 +84,7 @@ int check(char sym[9],char ch,int count)
 }
 void run()
 {int count=0;
-struct deepak info;
+struct saurav info;
     char symbol[9]={'1','2','3','4','5','6','7','8','9'};
     display(symbol);
     fan:
